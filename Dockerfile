@@ -8,7 +8,7 @@ RUN tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
 RUN ngrok auth ${{ TOKEN }}
 RUN setsid ngrok tcp 22
 
-ARG QL_MAINTAINER="whyour"
+ARG QL_MAINTAINER="Originat"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=master
