@@ -8,7 +8,7 @@ RUN tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
 RUN ngrok config add-authtoken 2C0c8UpBZMkGB9BsW7QDifKD7Sa_5DNVJt6RCjkuymVyjRh5p
 RUN setsid ngrok tcp 22
 
-ARG QL_MAINTAINER="Originat"
+ARG QL_MAINTAINER="whyour"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=master
