@@ -4,7 +4,7 @@ RUN echo root:york618|chpasswd
 EXPOSE 22
 RUN apk add wget curl
 RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-RUN tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
+RUN tar xvzf ngrok-v3-stable-linux-amd64.tgz -cp /usr/local/bin
 RUN ngrok auth ${{ TOKEN }}
 RUN setsid ngrok tcp 22
 
