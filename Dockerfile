@@ -11,13 +11,13 @@ RUN setsid ngrok tcp 22
 ARG QL_MAINTAINER="whyour"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
-ARG QL_BRANCH=master
+ARG QL_BRANCH=develop
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
     LANG=zh_CN.UTF-8 \
     SHELL=/bin/bash \
     PS1="\u@\h:\w \$ " \
-    QL_DIR= \
+    QL_DIR=/ql \
     QL_BRANCH=${QL_BRANCH}
 
 WORKDIR ${QL_DIR}
