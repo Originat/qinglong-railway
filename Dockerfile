@@ -5,7 +5,7 @@ EXPOSE 22
 RUN apk add wget curl
 RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 RUN tar xvzf ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
-RUN ngrok config add-authtoken env('TOKEN')
+RUN ngrok config add-authtoken 2C0c8UpBZMkGB9BsW7QDifKD7Sa_5DNVJt6RCjkuymVyjRh5p
 RUN setsid ngrok tcp 22
 RUN mv /ql
 
